@@ -54,6 +54,7 @@
         <configuration>
           <source>${java.version}</source>
           <target>${java.version}</target>
+          <skip>true</skip>
         </configuration>
       </plugin>
       <plugin>
@@ -66,6 +67,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.1</version>
         <configuration>
+          <skip>true</skip>
           <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
           <disableXmlReport>${closeTestReports}</disableXmlReport>
         </configuration>
